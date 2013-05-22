@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-  		transitional.dtd">
+<html>
+<head>
+<meta name="keywords" content="clf,oil,aceite,libricante,coche,automocion,moto,camion,taller,Galicia,Vigo,Pontevedra"/><meta name="lang" content="es" /><meta name="author" content="clfoil automocion" /><meta name="organization" content="clfoil aotomocion s. l." /><meta name="locality" content="Vigo, España" /><meta name="description" content="Empresa de disribución de lubricantes para automoción" />
+<title>ClfOil.com - Clf Oil automoci&oacute;n</title>
+<link rel="stylesheet" href="estilos.css" type="text/css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+<script>
+(function ($) {
+// VERTICALLY ALIGN FUNCTION
+$.fn.vAlign = function() {
+	return this.each(function(i){
+	var ah = $(this).height();
+	var ph = $(this).parent().height();
+	var mh = (ph - ah) / 2;
+	$(this).css('margin-top', mh);
+	});
+};
+})(jQuery);
+
+$(document).ready(function(){
+$('#contenedor').vAlign();});
+</script>
+</head>
+<body>
+<div id="wrap">
+<div id="contenedor">
+	<div id="cabecero" class="a900">
+		<!-- Logo -->
+		<a href="index.htm" title="Portada" class="logo"><img src="img/logo.jpg" alt="CLF Oil" border="none" /></a>
+		<!-- Pesta&ntilde;as -->
+		<ul id="pestanas">
+			<li class="activa"><span>Inicio</span></li>
+			<!--li><a href="productos.htm"><span>Productos</span></a></li-->
+		</ul>
+	</div>
+<div id="cuerpo" class="a900">
+	<!-- Texto -->
+	<div id="texto" class="a30pct izq">
+		<p>CLF OIL AUTOMOCION S.L. nace el 19 de Enero de 2010 en Vigo (Pontevedra) gracias a los m&aacute;s de 20 a&ntilde;os de experiencia en el sector de los lubricantes de automoci&oacute;n. Ofrecemos soluciones reales a sus necesidades, manteniendo para ello una politica de precios estables y competitivos con stock permanente. Ofrecemos un plazo de entrega de 24 horas en la provincia y m&aacute;ximo 48-72 horas.
+Los valores b&aacute;sicos y necesarios de CLF OIL AUTOMOCION S.L son el respeto, la calidad del trabajo realizado, la educaci&oacute;n, el saber estar, la unidad de equipo, la objetividad y la honestidad. Una vez desarrollados estos, ya tendremos tiempo de pensar en otros m&aacute;s ambiciosos. </p>
+	</div>
+	<!-- Formulario -->
+	<div id="form" class="a70pct izq">
+		<img src="img/contacto.png" alt="Contacto" class="cliche_contacto" />
+		<img src="img/barra_contacto.png" border="0" usemap="#Map" class="barra_contacto" />
+        <map name="Map" id="Map">
+          <area shape="rect" coords="319,10,503,47" href="mailto: vigo@clfoil.com" />
+        </map>
+		<div class="form_campos">
+	  <form action="enviar.php" method="post">
+				<table width="450" border="0" cellspacing="3" cellpadding="3">
+				  <tr>
+				    <td valign="top">
+				  	  <span>Nombre</span>
+				  	  <input name="Nombre" type="text" class="campo" value="" />
+					</td>
+				    <td valign="top" rowspan="2"><span>Mensaje</span><textarea name="Texto" cols="30" rows="4" class="campo"></textarea></td>
+				  </tr>
+				  <tr>
+				    <td valign="top">
+				    	<span>E-mail</span>
+				    	<input name="Email" type="text" value="	" class="campo" />
+					</td>
+				  </tr>
+				  <tr>
+				 	 <td align="right" colspan="2"><input type="submit" name="enviar" value="Enviar" /></td>
+				  </tr>
+				</table>
+			</form>
+		</div>
+	</div>
+	<div class="clear"></div>
+	</div>
+</div>
+<p class="copy">&copy; CLF Oil 2010</p>
+</div>
+</body>
+</html>
